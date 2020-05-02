@@ -1,0 +1,5 @@
+[0424/213736.769:ERROR:process_info.cc(359)] UncheckedAllocate
+[0424/213748.153:ERROR:process_info.cc(359)] UncheckedAllocate
+[0428/011225.859:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0428/011225.906:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0428/011225.906:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.

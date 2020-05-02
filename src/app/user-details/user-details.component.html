@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row d-flex justify-content-center h-100"> 
+
+    <div class="user_card col-sm-9 col-md-9 col-lg-9"> 
+
+    <div class="text-center form1">Details</div>
+    <div class="form2 col-sm-12 col-md-12 col-lg-12">
+        <form>      
+            <div class="form-group">
+                <label class="lbl" for="name">Name</label>
+                <input 
+                    id="name" 
+                    type="text" 
+                    value="{{user.strName}}"
+                    class="form-control static"
+                    readonly>
+            </div>
+           
+            <div class="form-group">
+                <label class="lbl" for="email">Email</label>
+                <input 
+                    id="email" 
+                    type="text" 
+                    value="{{user.strEmail}}"
+                    class="form-control"
+                    readonly>
+            </div>
+    
+            <div class="form-group">
+                <!-- <mat-form-field>
+                    <mat-label class="lbl">Choose a date</mat-label>
+                    <input 
+                       matInput [matDatepicker]="picker" 
+                       [(ngModel)]="user.dtrDateSumbit"
+                    >
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field> -->
+                <label class="lbl" for="body">Date Submitted</label>
+                 <input 
+                    id="name" 
+                    type="date" 
+                    value="{{user.dtrDateSumbit}}"
+                    class="form-control static"
+                    readonly>
+            </div>
+
+            <div class="form-group">
+                <label class="lbl" for="body">Country</label>
+                 <input 
+                    id="name" 
+                    type="text" 
+                    value="{{user.strCountry}}"
+                    class="form-control static"
+                    readonly>
+            </div>
+           
+            <div class="form-group">
+                <label class="lbl" for="body">Address</label>
+                <textarea 
+                    id="body" 
+                    type="text" 
+                    value="{{user.strAddress}}"
+                    class="form-control"
+                    readonly>
+                </textarea>
+            </div>
+          
+            <button class="btn btn-primary btn-block" (click)="goBack()" type="submit">Back</button>
+        </form>
+    </div>
+    </div>
+    </div>
+    
+</div>
